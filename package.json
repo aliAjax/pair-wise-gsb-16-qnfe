@@ -2,6 +2,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 5101",
     "build": "vite build",
+    "test": "esbuild scripts/domain.test.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/domain.test.mjs && node node_modules/.cache/domain.test.mjs",
     "preview": "vite preview --host 0.0.0.0 --port 5101"
   },
   "dependencies": {
